@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/page/boulangerie.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>Guinée Boulangerie</title>
+</head>
+<body>
+
+    <!----------------      HEADER        -------------------->
+    <header class="flex flex-column flex-hc flex-vc">
+        <div id="header-top" class="flex flex-hc flex-vc">
+            <div class="container flex flex-sb p-10">
+                <address class="flex gap-5" aria-label="Adresse de l'entreprise">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Dixinn, Conakry-Guinée BP 1515</span>
+                </address>
+                <nav aria-label="Contact" class="flex gap-25">
+                    <a href="tel:+224624616467" aria-label="Numéro de telephone">
+                        <i class="fa-brands fa-whatsapp">
+                            <span class="py-5">224 624 616 467</span>
+                        </i>                    
+                    </a>
+                    <a href="https://www.facebook.com" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div id="header-center" class="flex flex-hc flex-vc">
+            <div class="container flex">
+                <a href="/" aria-label="Page d'accueil" class="flex-1 flex flex-hc flex-vc">
+                    <img src="assets/images/logo.png" alt="Logo de l'entreprise" srcset="">
+                </a>
+                <div class="nom-entreprise-logo flex-1 flex flex-column flex-vc" aria-label="nom de l'entreprise">
+                    <h1>Boulangerie Guinee</h1>
+                    <h3>Boulangerie-Viennoiserie-Patisserie</h3>
+                </div>
+            </div>
+        </div>
+        <div id="header-bottom" class="flex flex-hc flex-vc">
+            <nav class="container flex" aria-label="Menu principal">
+                <div id="togglecontainer" class="flex">
+                    <div class="toggle-logo flex-4 flex gap-10">
+                        <a href="/" aria-label="Page d'accueil" class="flex-1">
+                            <img src="assets/images/logo.png" alt="Logo de l'entreprise" srcset="">
+                        </a>
+                        <div class="flex-8 flex flex-column  flex-vc flex-hc" aria-label="nom de l'entreprise">
+                            <h1>Boulangerie Guinee</h1>
+                            <h3>Boulangerie-Viennoiserie-Patisserie</h3>
+                        </div>
+                    </div>
+                    <button aria-controls="mobile-nav" aria-expanded="false" id="toggleMobileNav" class="fa fa-bars"></button>
+                </div>
+                <ul class="container m-0 py-10 no-style flex-1 flex flex-content-center gap-10" id="mobile-nav">
+                    <li class="flex-1 m-0 text-center"><a href="/" class="no-decoration">Accueil</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/boulangerie.html" class="no-decoration">Boulangerie</a></li>
+                    <li class="flex-1 m-0 active text-center"><a href="/patisserie.html" class="no-decoration">Patisserie</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/viennoiserie.html" class="no-decoration">Viennoiserie</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/contact.html" class="no-decoration">Contact</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/monpanier.html" class="no-decoration">Mon Panier</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!----------------       MAIN         -------------------->
+    <main class="flex flex-column flex-hc flex-vc">
+        <section class="flex p-25">
+            <div class="flex-1 flex flex-column p-25 gap-10">
+                <h1>Patisserie</h1>
+                <div>
+                    Découvrez l'art exquis de notre pâtisserie, où chaque création est une symphonie de saveurs et de 
+                    textures. Plongez dans un univers de délices sucrés où nos gâteaux, tartes et éclairs sont 
+                    méticuleusement confectionnés pour capturer l'essence même du plaisir gustatif. Laissez-vous séduire 
+                    par nos macarons aux couleurs vibrantes et aux garnitures délicates, ou succombez à la tentation avec
+                    nos créations chocolatées riches en goût et en sophistication. Chaque bouchée est une invitation à
+                    savourer l'harmonie parfaite entre qualité artisanale et créativité culinaire, pour une expérience
+                    pâtissière inoubliable.
+                </div>
+            </div>
+            <img src="assets/images/patisserie/patiserie.jpeg" alt="" class="flex-1 p-25">
+        </section>
+
+        <section class="flex flex-hc flex-vc gap-25 p-25 wrap">
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="chouquettes">                
+                <img src="assets/images/patisserie/chouquettes/chouquettes1.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h1>LES CHOUQUETTES</h1>
+                    <span>2500GNF</span>
+                </div>
+                <button onclick="ajouter_panier('chouquettes')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('chouquettes')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('chouquettes')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="religieuse">                
+                <img src="assets/images/patisserie/La religieuse/Religieuse1.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h1>LA RELIGIEUSE</h1>
+                    <span>2300GNF</span>
+                </div>
+                <button onclick="ajouter_panier('religieuse')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('religieuse')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('religieuse')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="bourdaloue">                
+                <img src="assets/images/patisserie/La tarte Bourdaloue/La tarte bourdaloue1.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h1>LA TARTE BOURDALOUE</h1>
+                    <span>2000GNF</span>
+                </div>
+                <button onclick="ajouter_panier('bourdaloue')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('bourdaloue')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('bourdaloue')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="financier">                
+                <img src="assets/images/patisserie/Le financier/Financiers1.jpeg" alt="" srcset="">                
+                <div class="text-center">
+                    <h1>LE FINANCIER</h1>
+                    <span>1700GNF</span>
+                </div>
+                <button onclick="ajouter_panier('financier')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('financier')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('financier')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="millefeuille">                
+                <img src="assets/images/patisserie/Le mille-feuille/Mille-feuilles1.jpeg" alt="" srcset="">        
+                <div class="text-center">
+                    <h1>LE MILLE-FEUILLE</h1>
+                    <span>3000GNF</span>
+                </div>
+                <button onclick="ajouter_panier('millefeuille')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('millefeuille')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('millefeuille')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="moka">                
+                <img src="assets/images/patisserie/Le moka/Moka1.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h1>LE MOKA</h1>
+                    <span>2900GNF</span>
+                </div>
+                <button onclick="ajouter_panier('moka')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('moka')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('moka')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="sainthonore">
+                <img src="assets/images/patisserie/Le saint-honoré/Saint Honore1.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h1>LE SAINT-HONORE</h1>
+                    <span>1000GNF</span>
+                </div>
+                <button onclick="ajouter_panier('sainthonore')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('sainthonore')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('sainthonore')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="macarons">        
+                <img src="assets/images/patisserie/Les macarons/Macarons1.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h1>LES MACARONS</h1>
+                    <span>2000GNF</span>
+                </div>
+                <button onclick="ajouter_panier('macarons')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('macarons')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('macarons')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="m-25 flex flex-column flex-sb flex-vc gap-10" id="opera">
+                <img src="assets/images/patisserie/opéra/opera1.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h1>L'OPERA</h1>
+                    <span>2600GNF</span>
+                </div>
+                <button onclick="ajouter_panier('opera')">ajouter au panier</button>
+                <div class="flex flex-hc flex-vc gap-25">
+                    <button onclick="ajouter('opera')"><i class="fa-solid fa-plus"></i></button>
+                    <div>0</div>
+                    <button onclick="retirer('opera')"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="flex flex-column flex-hc flex-vc">
+        <div class="footer-top flex-1 flex flex-hc flex-vc">
+            <div class="container flex flex-vc p-10">
+                <div class="footer-logo flex-1 flex flex-vc flex-hc">
+                    <img src="assets/images/logo.png" alt="Logo de Guinée Boulangerie">
+                </div>
+                <div class="footer-adresse flex-2 flex flex-column gap-5">
+                    <h1>Adresse</h1>
+                    <div class="adresse-list flex flex-column gap-10">
+                        <div class="lieu">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Dixinn, près du 28 Septembre</span>
+                        </div>
+                        <div class="ville">
+                            Conakry-Guinée
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-information flex-2 flex flex-column flex-vr gap-5">
+                    <h1>Information</h1>
+                    <ul class="list-menu no-style text-blanc flex flex-column m-0 p-0 gap-10">
+                        <li>                
+                            <a href="tel:+224624616467" class="no-decoration text-blanc" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>224 624 616 467</span>
+                            </a>
+                        </li>
+                        <li>                
+                            <a href="mailto:keitacheick025@gmail.com" class="no-decoration text-blanc" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>keitacheick025@gmail.com</span>                        
+                            </a>
+                        </li>
+                        <li class="flex gap-25">                
+                            <a href="https://facebook.com" class="no-decoration text-blanc" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span>Facebook</span>                        
+                            </a>
+                            <a href="https://twitter.com" class="no-decoration text-blanc" aria-label="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                                <span>Twitter</span>                        
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom flex-1 flex flex-vc flex-hc">
+            <p>Copiright &copy; 2024 Guinée Boulangerie | Boulangerie. Pâtisserie. Viennoiserie</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+main section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main input, main textarea {
+    outline: 1px solid var(--text-color);
+    padding: 10px;
+}
+
+main input:hover, main textarea:hover {
+    outline: 1px solid var(--primary-color);
+}
+
+@media (max-width: 576px) {
+    main section > div > div {
+        flex-direction: column;
+    }
+    
+}

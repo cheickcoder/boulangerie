@@ -1,0 +1,54 @@
+main  > section:nth-of-type(1) > h1, main  > section:nth-of-type(2) > h1 {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 18px;
+} 
+
+main #panier-vide ,main #section-produits > div, main #section-produits > table{
+    border: 1px solid var(--primary-color);
+}
+
+main #commande-vide , main #section-commandes> table{
+    border: 1px solid var(--primary-color);
+}
+
+.section-panier {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px;
+}
+
+table  {
+    width: 100%;
+    padding: 20px;
+}
+
+table thead {
+    font-weight: 700;
+}
+
+table tr th, table tr td {
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0;
+}
+
+textarea {
+    padding: 10px;
+    outline: 1px solid var(--text-color);
+    width: 100%;
+}
+
+textarea:hover {
+    outline: 1px solid var(--primary-color);
+}
+
+
+@media (max-width: 576px) {
+    main #section-produits > div {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    
+}

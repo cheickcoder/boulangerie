@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/page/index.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>Guinée Boulangerie</title>
+</head>
+<body>
+
+    <!----------------      HEADER        -------------------->
+    <header class="flex flex-column flex-hc flex-vc">
+        <div id="header-top" class="flex flex-hc flex-vc">
+            <div class="container flex flex-sb p-10">
+                <address class="flex gap-5" aria-label="Adresse de l'entreprise">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Dixinn, Conakry-Guinée BP 1515</span>
+                </address>
+                <nav aria-label="Contact" class="flex gap-25">
+                    <a href="tel:+224624616467" aria-label="Numéro de telephone">
+                        <i class="fa-brands fa-whatsapp">
+                            <span class="py-5">224 624 616 467</span>
+                        </i>                    
+                    </a>
+                    <a href="https://www.facebook.com" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div id="header-center" class="flex flex-hc flex-vc">
+            <div class="container flex">
+                <a href="/" aria-label="Page d'accueil" class="flex-1 flex flex-hc flex-vc">
+                    <img src="assets/images/logo.png" alt="Logo de l'entreprise" srcset="">
+                </a>
+                <div class="nom-entreprise-logo flex-1 flex flex-column flex-vc" aria-label="nom de l'entreprise">
+                    <h1>Boulangerie Guinee</h1>
+                    <h3>Boulangerie-Viennoiserie-Patisserie</h3>
+                </div>
+            </div>
+        </div>
+        <div id="header-bottom" class="flex flex-hc flex-vc">
+            <nav class="container flex" aria-label="Menu principal">
+                <div id="togglecontainer" class="flex">
+                    <div class="toggle-logo flex-4 flex gap-10">
+                        <a href="/" aria-label="Page d'accueil" class="flex-1">
+                            <img src="assets/images/logo.png" alt="Logo de l'entreprise" srcset="">
+                        </a>
+                        <div class="flex-8 flex flex-column  flex-vc flex-hc" aria-label="nom de l'entreprise">
+                            <h1>Boulangerie Guinee</h1>
+                            <h3>Boulangerie-Viennoiserie-Patisserie</h3>
+                        </div>
+                    </div>
+                    <button aria-controls="mobile-nav" aria-expanded="false" id="toggleMobileNav" class="fa fa-bars"></button>
+                </div>
+                <ul class="container m-0 py-10 no-style flex-1 flex flex-content-center gap-10" id="mobile-nav">
+                    <li class="flex-1 m-0 active text-center"><a href="/" class="no-decoration">Accueil</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/boulangerie.html" class="no-decoration">Boulangerie</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/patisserie.html" class="no-decoration">Patisserie</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/viennoiserie.html" class="no-decoration">Viennoiserie</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/contact.html" class="no-decoration">Contact</a></li>
+                    <li class="flex-1 m-0 text-center"><a href="/monpanier.html" class="no-decoration">Mon Panier</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!----------------       MAIN         -------------------->
+    <main class="flex flex-column flex-hc flex-vc">
+
+        <section class="section-slider">
+            <div class="slides bg-boulangerie slide-active">
+                <div class="flex flex-column gap-5 flex-vl flex-hc p-5">
+                    <h2>Boulangerie</h2>
+                    <div class="p-5 text-center" id="commander-boulangerie">
+                        <a href="/boulangerie.html" class="no-decoration">Commander</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slides bg-patiserie">
+                <div class="flex flex-column gap-5 flex-vc flex-hc p-5">
+                    <h2>Patisserie</h2>
+                    <div class="p-5 text-center" id="commander-patiserie">
+                        <a href="/patisserie.html" class="no-decoration">Commander</a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="slides bg-viennoiserie">
+                <div class="flex flex-column gap-5 flex-vc flex-hc p-5">
+                    <h2>Viennoiserie</h2>
+                    <div class="p-5 text-center" id="commander-viennoiserie">
+                        <a href="/boulangerie.html" class="no-decoration">Commander</a>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <section class="section-presentation p-25 flex flex-vc flex-hc">
+            <div class="container flex flex-vl flex-hc gap-10 border-box">                
+                <img src="assets/images/presentation.jpeg" alt="Image de présentation" class="flex-1">
+                <aside class="flex-1">
+                    <h1 class="text-center">Bienvenue chez Guinée Boulangerie</h1>
+                    <div class="text-center contenu-presentation">
+                        <p>
+                            Fondé en 2005 par Cheick Tidiane KEITA, notre Boulangerie est une institution à Dixinn, Conakry-Guinée.
+                        </p>
+                        <p>
+                            Depuis nos débuts, nous avons toujours mis un point d'honneur à offrir à nos clients des produits
+                            de qualité, faits maison, avec des ingrédients soigneusement sélectionnés.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section-valeurs flex flex-column flex-vc flex-hc p-25">
+            <div class="container flex flex-column flex-vl flex-hc gap-10 border-box">
+                <h1>Nos valeurs</h1>
+                <aside class="flex">
+                    <div class="flex-1 flex flex-column p-5">
+                        <h2>Qualité</h2>
+                        <p>Nous utilisons uniquement des ingrédients de haute qualité pour toutes nos préparations.</p>
+                    </div>
+                    <div class="flex-1 flex flex-column p-5">
+                        <h2>Artisanat</h2>
+                        <p>Chaque pain, pâtisserie et viennoiserie est confectionné avec soin selon des méthodes artisanales.</p>
+                    </div>
+                    <div class="flex-1 flex flex-column p-5">
+                        <h2>Communauté</h2>
+                        <p>Nous sommes fiers de faire partie de la communauté locale et nous nous engageons à soutenir les événements et initiatives locales.</p>
+                    </div>
+                </aside>
+            </div>            
+        </section>
+    
+
+        <section class="section-produits flex flex-vc flex-hc px-25">
+            <div class="container flex-1 flex flex-column gap-25">
+                <h1 class="flex-1 flex flex-vc flex-hc">Nos produits</h1>
+                <div class="produits flex-7 flex flex-column gap-25">
+                    <div class="produit flex-1 flex flex-sb flex-hc no-decoration gap-25">
+                        <img src="assets/images/boulangerie/LE PAIN CHALLAH/Challah1.jpeg" alt="Produit Boulangerie" class="flex-1">
+                        <div class="flex-1 flex flex-column flex-vc flex-hc gap-10">
+                            <span class="flex-1 text-center">Boulangerie</span>
+                            <a href="/boulangerie.html">
+                                voir plus de produits <i class="fa-solid fa-arrow-right"></i>
+                            </a>                      
+                        </div>            
+                    </div>
+                    <div class="produit flex-1 flex flex-sb flex-hc no-decoration gap-25">
+                        <img src="assets/images/patisserie/Le mille-feuille/Mille-feuilles1.jpeg" alt="Produit Patisserie" class="flex-1">
+                        <div class="flex-1 flex flex-column flex-vc flex-hc gap-10">
+                            <span class="flex-1 text-center">Pâtisserie</span> 
+                            <a href="/patisserie.html">
+                                voir plus  de produits<i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>                       
+                    </div>
+                    <div class="produit flex-1 flex flex-sb flex-hc no-decoration  gap-25">
+                        <img src="assets/images/viennoiserie/Pain viennois/Viennoise1.jpeg" alt="Produit Viennoiserie" class="flex-1">
+                        <div class="flex-1 flex flex-column flex-vc flex-hc gap-10">
+                            <span class="flex-1 text-center">Viennoiserie</span> 
+                            <a href="/viennoiserie.html">
+                                voir plus  de produits<i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                       </div>                                             
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-horaire flex flex-vc flex-hc px-25">
+            <div class="container flex-1 flex flex-column">
+                <h1 class="flex-1 flex flex-vc flex-hc">Horaires</h1>
+                <table class="flex-7">
+                    <tbody>
+                        <tr>
+                            <td class="text-center p-10">Lundi</td>
+                            <td class="text-center p-10">Fermée</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center p-10">Mardi</td>
+                            <td class="text-center p-10">Fermée</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center p-10">Mercredi</td>
+                            <td class="text-center p-10">08:00 - 17:30</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center p-10">Jeudi</td>
+                            <td class="text-center p-10">08:00 - 17:30</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center p-10">Vendredi</td>
+                            <td class="text-center p-10">08:00 - 17:30</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center p-10">Samedi</td>
+                            <td class="text-center p-10">08:00 - 17:30</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center p-10">Dimanche</td>
+                            <td class="text-center p-10">08:00 - 17:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="flex flex-column flex-hc flex-vc">
+        <div class="footer-top flex-1 flex flex-hc flex-vc">
+            <div class="container flex flex-vc p-10">
+                <div class="footer-logo flex-1 flex flex-vc flex-hc">
+                    <img src="assets/images/logo.png" alt="Logo de Guinée Boulangerie">
+                </div>
+                <div class="footer-adresse flex-2 flex flex-column gap-5">
+                    <h1>Adresse</h1>
+                    <div class="adresse-list flex flex-column gap-10">
+                        <div class="lieu">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Dixinn, près du 28 Septembre</span>
+                        </div>
+                        <div class="ville">
+                            Conakry-Guinée
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-information flex-2 flex flex-column flex-vr gap-5">
+                    <h1>Information</h1>
+                    <ul class="list-menu no-style text-blanc flex flex-column m-0 p-0 gap-10">
+                        <li>                
+                            <a href="tel:+224624616467" class="no-decoration text-blanc" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>224 624 616 467</span>
+                            </a>
+                        </li>
+                        <li>                
+                            <a href="mailto:keitacheick025@gmail.com" class="no-decoration text-blanc" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>keitacheick025@gmail.com</span>                        
+                            </a>
+                        </li>
+                        <li class="flex gap-25">                
+                            <a href="https://facebook.com" class="no-decoration text-blanc" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span>Facebook</span>                        
+                            </a>
+                            <a href="https://twitter.com" class="no-decoration text-blanc" aria-label="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                                <span>Twitter</span>                        
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom flex-1 flex flex-vc flex-hc">
+            <p>Copiright &copy; 2024 Guinée Boulangerie | Boulangerie. Pâtisserie. Viennoiserie</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
